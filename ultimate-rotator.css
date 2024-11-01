@@ -1,0 +1,48 @@
+.clearBoth{ clear: Both; }
+
+/*** slide item & description ***/
+.ulrotator-item{ position: relative; }
+.ulrotator-item-description{ position: absolute; bottom: 0; background: url('images/bg-description.png') repeat; padding: 4px 10px; color: #FFF; font-size: 11px; }
+.ulrotator-item-description a{ color: #FFF; }
+
+/*** cycle ***/
+.ulrotator-wrap-cycle .ulrotator-item{ display: none; }
+.ulrotator-wrap-cycle .ulrotator-first-item{ display: block; }
+.ulrotator-widget-all .ulrotator-item{ display: block; }
+.ulrotator-wrap-cycle .ulrotator-content{ overflow: hidden; }
+
+
+/*** slide ***/
+.ulrotator-wrap-slide{ position: relative; }
+.ulrotator-wrap-slide .ulrotator-content{ overflow: hidden; }
+.ulrotator-wrap-slide .ulrotator-box-vertical{ height: 99999999px; }
+.ulrotator-wrap-slide .ulrotator-box-horizontal{ width: 99999999px; }
+
+/* slide single */
+.ulrotator-wrap-slide-single .ulrotator-box-horizontal .ulrotator-item{ float: left; }
+
+/* slide multiple */
+.ulrotator-wrap-slide-multiple .ulrotator-box-horizontal .ulrotator-item-group{ float: left; }
+.ulrotator-wrap-slide-multiple .ulrotator-box-horizontal .ulrotator-item{ float: left; }
+
+/*** fade ***/
+.ulrotator-wrap-fade{ position: relative; }
+.ulrotator-wrap-fade .ulrotator-content{ overflow: hidden; }
+
+/* fade single */
+.ulrotator-wrap-fade-single .ulrotator-box-horizontal .ulrotator-item{ float: left; }
+
+/* fade multiple */
+.ulrotator-wrap-fade-multiple .ulrotator-box-horizontal .ulrotator-item-group{ float: left; }
+.ulrotator-wrap-fade-multiple .ulrotator-box-horizontal .ulrotator-item{ float: left; }
+
+/*** next/previous ***/
+.ulrotator-prev, .ulrotator-next{ display: block; width: 16px; height: 15px; position: absolute; bottom: 15px; z-index: 10; }
+.ulrotator-prev{ background: url('images/slide-nav.png') no-repeat; right: 32px; }
+.ulrotator-next{ background: url('images/slide-nav.png') no-repeat -16px 0; right: 15px; }
+
+
+/*** fade pager ***/
+.ulrotator-container-fade .nav{ position: absolute; bottom: 10px; right: 10px; z-index: 888; }
+.ulrotator-container-fade .nav a{ text-decoration: none; display: block; float: left; padding: 3px 5px; background: #fff; font-weight: bold; font-size: 14px; margin-left: 2px; }
+.ulrotator-container-fade .nav a.activeSlide{ color: #000; }
